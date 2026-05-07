@@ -4,6 +4,9 @@
 
 GeoNexus is a high-throughput spatial indexing engine designed to optimize proximity searches in 2D environments. By shifting from a linear O(N) search approach to a logarithmic O(log N) Quadtree-based architecture, the system achieves microsecond-level retrieval latency. This project is engineered to demonstrate how spatial partitioning can handle high-concurrency workloads, such as those found in ride-sharing or real-time location-based services.
 
+<img width="1912" height="908" alt="image" src="https://github.com/user-attachments/assets/e2a52fab-01e8-4300-bcf3-8b0944e33ac4" />
+
+
 ## Core Architecture
 
 The engine utilizes a recursive partitioning strategy. The coordinate space is treated as a root node that subdivides into four quadrants whenever a specified capacity threshold is exceeded. This hierarchical structure ensures that the search space is pruned effectively during query execution.
